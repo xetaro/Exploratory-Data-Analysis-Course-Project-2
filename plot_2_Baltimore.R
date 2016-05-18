@@ -1,10 +1,10 @@
-setwd ("//HOME/tkelevin/Mes Documents/FORMATION_DATA_MANAGER/Coursera/Exploratory Data Analysis/Week 4")
+setwd ("//.../Coursera/Exploratory Data Analysis/Week 4")
 getwd()
 install.packages("downloader")
-library("downloader", lib.loc="C:/Program Files/R/R-3.2.3/library")
+library("downloader")
 dataset_url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
 download(dataset_url, dest = "data.zip", mode = "wb")
-unzip("data.zip", exdir = "//HOME/tkelevin/Mes Documents/FORMATION_DATA_MANAGER/Coursera/Exploratory Data Analysis/Week 4")
+unzip("data.zip", exdir = "//.../Coursera/Exploratory Data Analysis/Week 4")
 Emissions <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 
